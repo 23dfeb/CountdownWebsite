@@ -22,7 +22,7 @@ function countdownTimer() {
     audio.play();
   }
 
-  if (remainingTime < 18700000 ) {
+  if (remainingTime < 0) {
     clearInterval(countdownTimer);
     countdown.innerHTML = 'ปีใหม่และ :)';
 
