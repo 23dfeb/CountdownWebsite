@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&display=swap');
+
+body {
+	transition: color 2s ease-in-out;
+	background-color: white;
+}
+
+
+.main {
+	transition: color 2s ease-in-out;
+	font-family: 'Kanit', sans-serif;
+	position: absolute;  
+	top: 50%;  
+	left: 50%; 
+	transform: translate(-50%, -50%);  
+}
+
+.credit {
+	font-family: 'Kanit', sans-serif;
+	text-align: center;
+}
