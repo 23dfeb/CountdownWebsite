@@ -16,15 +16,16 @@ function countdownTimer() {
   const seconds = Math.floor((remainingTime / 1000) % 60);
   
   countdown.innerHTML = `เหลือเวลาในปีนี้อีก ${days} วัน ${hours} ชั่วโมง ${minutes} นาที ${seconds} วินาที`;
-  qoute.innerHTML = `ขอให้มีความสุขกับปีนี้และปีหน้า และขอให้พี่พงศ์เปลี่ยนครูเคมีคนใหม่`
   
   if (hours === 0 && minutes === 0 && seconds === 56) {
     audio.play();
+    qoute.innerHTML = `อีกฮึ้บนึง`;
   }
 
   if (remainingTime < 0) {
     clearInterval(countdownTimer);
     countdown.innerHTML = 'ปีใหม่และ :)';
+    qoute.innerHTML = `โชคดีมีชัย สุ่มเกมอะไรก็ไม่เกลือ เจอครูนิสัยดี ไม่ปิ้เหมือนดิว`;
 
     document.body.style.backgroundColor = 'black'
     main.style.color = 'white';
